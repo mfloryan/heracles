@@ -1,0 +1,25 @@
+[user]
+	name = Marcin Floryan
+	email = marcin.floryan@gmail.com
+[core]
+	editor = vim
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+	header = cyan
+
+[color "branch"]
+	current = yellow
+	local = green
+	remote = cyan
+
+[color]
+	ui = auto
+
+[alias]
+	st = status
+	last = log -1 HEAD
+	who = shortlog -s --
+	lg = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
