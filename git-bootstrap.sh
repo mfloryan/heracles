@@ -27,9 +27,12 @@ fi
 
 query_git_config_variable "user.name" "you name"
 query_git_config_variable "user.email" "you email address"
+query_git_config_variable "http.proxy" "the HTTP proxy"
+
 set_git_global_config "core.excludesfile" "~/.gitignore.global"
 
 if [ -f ~/.gitignore.global ]; then
+	echo "Creating the default global ignore file for git"
 	cp gitignore ~/.gitignore.global
 fi
 
