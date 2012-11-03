@@ -17,8 +17,9 @@
 	remote = cyan
 
 [alias]
+	co = checkout
 	st = status
-	last = log -1 HEAD
 	who = shortlog -s --
 	amend = commit --amend
+	last = log -1 HEAD
 	lg = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
