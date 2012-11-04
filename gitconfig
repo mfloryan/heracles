@@ -23,3 +23,5 @@
 	amend = commit --amend
 	last = log -1 HEAD
 	lg = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
+	lg2 = log --pretty=oneline --abbrev-commit --graph --decorate
+	unstage = reset HEAD
