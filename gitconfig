@@ -1,6 +1,5 @@
 
 [core]
-	autocrlf = true
 	editor = vim
 
 [color]
