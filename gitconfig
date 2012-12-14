@@ -21,8 +21,8 @@
 	st = status
 	who = shortlog -s --
 	amend = commit --amend
-	last = log -1 HEAD
-	lg = log --pretty=tformat:'%h %C(yellow)%cd%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --no-merges
+	last = log --pretty=medium -1 HEAD --stat
+	lg = log --pretty=tformat:'%h %C(yellow)%cd%Creset %an %C(cyan)%d%Creset %Cgreen%s%Creset' --no-merges -n 20
 	lg2 = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
 	lg3 = log --pretty=oneline --abbrev-commit --graph --decorate
 	graph = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
@@ -30,3 +30,6 @@
 
 [i18n]
 	filesEncoding = utf-8
+
+[push]
+	default = upstream
