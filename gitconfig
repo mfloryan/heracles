@@ -28,6 +28,12 @@
 	graph = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
 	unstage = reset HEAD
 
+	# From: http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
+	assume   = update-index --assume-unchanged
+	unassume = update-index --no-assume-unchanged
+	assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+	differ = git diff --patience
+
 [i18n]
 	filesEncoding = utf-8
 
