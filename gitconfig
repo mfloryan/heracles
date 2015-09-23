@@ -29,6 +29,7 @@
 	lg3 = log --pretty=oneline --abbrev-commit --graph --decorate
 	lga = log --glob=* --decorate --oneline --graph
 	lgn = log --pretty=tformat:'%h %C(yellow)%ci%Creset %an %C(cyan)%d%Creset %Cgreen%s%Creset' --no-merges
+	lgf = log --name-status --pretty=format:'%C(yellow)%h %Cgreen%s%Creset - %C(cyan)%an%Creset'
 	graph = log --pretty=tformat:'%h %C(yellow)%cr%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph
 	unstage = reset HEAD
 	purge = clean -xdf
