@@ -17,3 +17,11 @@ Collected `git` wisdom which may come in handy
 * choose what bits of a file to add to the index `git add -p`
 * make the history slightly cleaner by replying changes on top of a merge `git pull --rebase`
 
+## Homebrew
+
+```
+brew tap martido/homebrew-graph
+brew install graphviz
+brew graph --installed --highlight-leaves | fdp -Tpng -obrew-dependency-graph.png
+open brew-dependency-graph.png
+```
