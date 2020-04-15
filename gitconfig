@@ -1,6 +1,6 @@
-
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore.global
 
 [color]
 	ui = auto
@@ -46,3 +46,13 @@
 
 [push]
 	default = upstream
+
+[includeIf "gitdir:~/dev/spotify/"]
+	path = .gitconfig-work
+
+[includeIf "gitdir:~/dev/github.com/"]
+	path = .gitconfig-github
+
+[includeIf "gitdir:~/dev/gitlab.com/"]
+	path = .gitconfig-gitlab
+
