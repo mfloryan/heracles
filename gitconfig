@@ -24,6 +24,7 @@
 	mg = merge
 	who = shortlog -s --
 	amend = commit --amend
+	new = !git init && git symbolic-ref HEAD refs/heads/main
 	last = log --pretty=medium -1 HEAD --stat
 	lg = log --pretty=tformat:'%h %C(yellow)%cr%Creset %an %C(cyan)%d%Creset %Cgreen%s%Creset' --no-merges -n 30
 	lg2 = log --pretty=tformat:'%h %C(yellow)%cd%Creset %cn %C(cyan)%d%Creset %Cgreen%s%Creset' --graph --date=short
